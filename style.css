@@ -1,0 +1,139 @@
+/* Container styling */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgb(222, 15, 104),
+    rgb(177, 23, 139),
+    rgb(240, 5, 138),
+    rgba(212, 122, 231)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Image styling */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.15;
+}
+
+/* Text and button container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -10rem; /* Adjust this value as needed to vertically center the text and button */
+}
+
+/* Text styling */
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Button styling */
+#loveButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(176, 70, 88);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  animation: loveAnimation 1s infinite;
+  border-radius: 2rem;
+}
+
+/* Button hover effect */
+#loveButton:hover {
+  background-color: hotpink;
+}
+
+/* Button animation */
+@keyframes loveAnimation {
+  0% {
+    transform: scale(1);
+    background-color: rgb(175, 230, 12);
+    font-size: 20px;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(14, 214, 11);
+    font-size: 20px;
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgb(32, 227, 198);
+    font-size: 20px;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  #loveButton {
+    font-size: 16px;
+    margin-top: 1.5rem;
+  }
+
+  .container {
+    margin-top: -5rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  #loveButton {
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+
+  .container {
+    margin-top: -7rem;
+  }
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(176, 70, 88);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
